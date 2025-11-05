@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Promotional Page</title>
+  <link rel="stylesheet" href="exp4.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Sweet Delights Bakery</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="slideshow">
+    <div class="slides fade">
+      <img src="https://www.warmoven.in/cdn/shop/files/new_vanilla_cake_1.jpg?v=1749827288&width=1080" alt="Cake 1">
+    </div>
+    <div class="slides fade">
+      <img src="https://www.shutterstock.com/image-photo/cake-cream-cheese-chocolate-fresh-600nw-2140065257.jpg" alt="Cake 2">
+    </div>
+    <div class="slides fade">
+      <img src="https://images.unsplash.com/photo-1571050045617-cbbd5e68d181?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8" alt="Cake 3">
+    </div>
+  </section>
+
+  <section class="content">
+    <h2>Welcome to Sweet Delights!</h2>
+    <p>Enjoy our freshly baked cakes, pastries, and breads every day. Made with love and care to bring a smile to your face.</p>
+    <a href="#" class="btn">Explore Menu</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sweet Delights Bakery. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change every 3 seconds
+    }
+  </script>
+</body>
+</html>

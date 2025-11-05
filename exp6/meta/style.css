@@ -1,0 +1,156 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffd1b3; /* soft peach */
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #e65c00;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://images.unsplash.com/photo-1510626176961-4b47d6ba3f5d?auto=format&fit=crop&w=1200&h=400') center/cover no-repeat;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.banner button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.banner button:hover {
+    background-color: #e65c00;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #fff5e6;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+
+.feature p {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: #ffd1b3;
+    color: #333;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+}
