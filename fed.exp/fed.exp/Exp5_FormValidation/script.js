@@ -1,0 +1,1 @@
+document.getElementById('regForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('msg').textContent='Submitted!';});

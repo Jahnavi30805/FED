@@ -1,0 +1,1 @@
+import {createSlice} from '@reduxjs/toolkit';const s=createSlice({name:'feedback',initialState:[],reducers:{add:(state,action)=>{state.push(action.payload);}}});export const{add}=s.actions;export default s.reducer;
